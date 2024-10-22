@@ -1,0 +1,286 @@
+@import '../Styles/Root.css';
+
+* {
+    font-family: var(--font-family-heading);
+}
+
+section {
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+
+.titles {
+    position: relative;
+    max-width: 550px;
+}
+
+.dots {
+    position: absolute;
+    top: 2%;
+    left: -8%;
+    width: 5rem;
+}
+
+.circle {
+    width: 255px;
+    position: absolute;
+    top: 19%;
+    right: 12%;
+}
+
+h1 {
+    font-size: var(--heading-01-size);
+    font-weight: var(--heading-01-font-weight);
+    line-break: var(--heading-01-line-height);
+    letter-spacing: var(--heading-01-letter-spacing);
+    color: var(--Bright-Grey);
+    word-spacing: 10px;
+}
+
+h1 span {
+    z-index: 10;
+}
+
+p {
+    margin-top: 20px;
+    color: var(--Mid-Grey);
+    font-size: var(--body-04-size);
+    line-height: var(--body-04-line-height);
+}
+
+.trialBtn {
+    margin-top: 20px;
+    background-color: var(--Light-Turquoise);
+    color: var(--White);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+.slideImages {
+    position: relative;
+}
+
+.phones {
+    z-index: -1;
+    width: 450px;
+}
+
+.total {
+    width: 230px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+
+}
+
+.graph {
+    width: 150px;
+    position: absolute;
+    top: 51%;
+    left: -30px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 1210px) {
+    .dots {
+        display: none;
+    }
+
+    .circle {
+        width: 160px;
+        position: absolute;
+        top: -5%;
+        right: 5%;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    .phones {
+        width: 370px;
+    }
+
+    .total {
+        width: 160px;
+    }
+
+    .graph {
+        width: 110px;
+        position: absolute;
+        top: 51%;
+        left: -10px;
+    }
+}
+
+@media (max-width: 1020px) {
+    section {
+        gap: 20px;
+    }
+
+    .titles {
+        max-width: 400px;
+    }
+
+    .circle {
+        width: 145px;
+        position: absolute;
+        top: 16%;
+        left: -5%;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .phones {
+        width: 350px;
+    }
+
+    .total {
+        width: 140px;
+    }
+
+    .graph {
+        width: 90px;
+        position: absolute;
+        top: 51%;
+        left: -10px;
+    }
+}
+
+@media (max-width: 760px) {
+    section {
+        gap: 20px;
+    }
+
+    .titles {
+        max-width: 420px;
+    }
+
+    .circle {
+        width: 150px;
+        position: absolute;
+        top: 15%;
+        left: 42%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .phones {
+        width: 450px;
+    }
+
+    .total {
+        width: 120px;
+    }
+
+    .graph {
+        width: 70px;
+        position: absolute;
+        top: 51%;
+        left: -10px;
+    }
+
+    .trialBtn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .titles {
+        max-width: 300px;
+    }
+
+    .circle {
+        width: 130px;
+        position: absolute;
+        top: 20%;
+        left: -8%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .phones {
+        width: 450px;
+    }
+
+    .total {
+        width: 120px;
+    }
+
+    .graph {
+        width: 70px;
+        position: absolute;
+        top: 51%;
+        left: 0px;
+    }
+
+    .trialBtn {
+        font-size: 8px;
+        padding: 4px 7px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .circle {
+        width: 130px;
+        position: absolute;
+        top: 15%;
+        left: 43%;
+    }
+
+    .graph {
+        width: 70px;
+        position: absolute;
+        top: 51%;
+        left: 0px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .circle {
+        width: 130px;
+        position: absolute;
+        top: 15%;
+        left: 43%;
+    }
+
+    .graph {
+        width: 70px;
+        position: absolute;
+        top: 51%;
+        left: 0px;
+    }
+}

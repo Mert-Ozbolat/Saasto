@@ -1,0 +1,16 @@
+@import '../Styles/Root.css';
+
+.userContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(max-width: 780px) {
+    .increaseUser {
+        border: none;
+    }
+}
